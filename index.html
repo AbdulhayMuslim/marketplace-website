@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خورجین - بازار آنلاین</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #005695;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="left-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="uploads/images/logo round web.png" alt="لوگو" class="logo">
+                    </a>
+                </div>
+                <div class="search-container tablet-search">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" placeholder="جستجوی محصولات..." class="search-input">
+                </div>
+            </div>
+            
+            <div class="center-section">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active">صفحه اصلی</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="right-section">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <a href="profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <button class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Theme Toggle Bar -->
+    <div class="theme-toggle-container" id="theme-toggle">
+        <div class="theme-icons">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+           
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/16005007/pexels-photo-16005007.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/30657921/pexels-photo-30657921.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg');">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>به خورجین خوش آمدید</h1>
+            <p>خرید و فروش آسان و سریع در افغانستان</p>
+            <div class="hero-buttons">
+                <a href="browse.html" class="cta-button primary">مشاهده آگهی‌ها</a>
+                <a href="post.html" class="cta-button secondary">ثبت آگهی رایگان</a>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="nav-dot active" data-slide="0"></button>
+            <button class="nav-dot" data-slide="1"></button>
+            <button class="nav-dot" data-slide="2"></button>
+            <button class="nav-dot" data-slide="3"></button>
+            <button class="nav-dot" data-slide="4"></button>
+            <button class="nav-dot" data-slide="5"></button>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="action-grid">
+            <a href="sell.html" class="action-card">
+                <i class="fas fa-plus-circle"></i>
+                <span>ثبت اعلان جدید</span>
+            </a>
+            <a href="my-listings.html" class="action-card">
+                <i class="fas fa-list"></i>
+                <span>اعلانات من</span>
+            </a>
+            <a href="favorites.html" class="action-card">
+                <i class="fas fa-heart"></i>
+                <span>علاقه‌مندی‌ها</span>
+            </a>
+            <a href="messages.html" class="action-card">
+                <i class="fas fa-comments"></i>
+                <span>پیام‌ها</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="popular-categories">
+        <h2>دسته‌بندی‌های محبوب</h2>
+        <div class="categories-grid">
+            <a href="category-vehicles.html" class="category-card">
+                <i class="fas fa-car"></i>
+                <span>موتر</span>
+            </a>
+            <a href="category-electronics.html" class="category-card">
+                <i class="fas fa-mobile-alt"></i>
+                <span>مبایل و الکترونیک</span>
+            </a>
+            <a href="category-furniture.html" class="category-card">
+                <i class="fas fa-couch"></i>
+                <span>وسایل خانه</span>
+            </a>
+            <a href="category-fashion.html" class="category-card">
+                <i class="fas fa-tshirt"></i>
+                <span>لباس و کفش</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Recent Listings -->
+    <section class="recent-listings">
+        <div class="section-header">
+            <h2>اعلانات اخیر</h2>
+        </div>
+        <div class="listings-grid">
+            <!-- Listings and view-all button will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Safety Tips -->
+    <section class="safety-tips">
+        <h2>نکات امنیتی</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>معامله امن</h3>
+                <p>در مکان‌های عمومی معامله کنید</p>
+            </div>
+            <div class="tip-card">
+                <i class="fas fa-user-check"></i>
+                <h3>شناسایی فروشنده</h3>
+                <p>پروفایل فروشنده را بررسی کنید</p>
+            </div>
+            <div class="tip-card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>هوشیار باشید</h3>
+                <p>قبل از پرداخت جنس را بررسی کنید</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-logo">
+                        <img src="uploads/images/logo round web.png" alt="لوگوی خورجین">
+                        <h3>خورجین</h3>
+                        <p>بازار آنلاین خرید و فروش در افغانستان</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="فیسبوک"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="تلگرام"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-links-column">
+                            <h4>دسترسی سریع</h4>
+                            <ul>
+                                <li><a href="index.html">صفحه اصلی</a></li>
+                                <li><a href="products.html">محصولات</a></li>
+                                <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                                <li><a href="listings.html">جدیدترین‌ها</a></li>
+                                <li><a href="contact.html">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-links-column">
+                            <h4>با خورجین</h4>
+                            <ul>
+                                <li><a href="about.html">درباره ما</a></li>
+                                <li><a href="careers.html">همکاری با ما</a></li>
+                                <li><a href="payment.html">شیوه‌های پرداخت</a></li>
+                                <li><a href="terms.html">شرایط استفاده</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>عضویت در خبرنامه</h4>
+                        <p>برای اطلاع از آخرین محصولات و تخفیف‌ها در خبرنامه ما عضو شوید</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="ایمیل خود را وارد کنید..." required>
+                            <button type="submit">عضویت <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    تمامی حقوق این وب‌سایت متعلق به خورجین می‌باشد. &copy; 1404
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

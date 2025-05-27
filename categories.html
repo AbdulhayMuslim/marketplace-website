@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته‌بندی‌ها - خورجین</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        #header-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: #f8f9fa;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
+        #header-loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #005695;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be loaded dynamically by header.js -->
+    <div id="header-loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Theme Toggle Bar -->
+    <div class="theme-toggle-container" id="theme-toggle">
+        <div class="theme-icons">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <!-- Categories Page Content -->
+    <main class="categories-page">
+        <div class="page-header">
+            <h1>دسته‌بندی‌های محصولات</h1>
+            <p>انتخاب دسته‌بندی مورد نظر برای مشاهده محصولات</p>
+        </div>
+
+        <div class="categories-container">
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>موتر</h3>
+                    <p>موترهای دست دوم و نو با قیمت مناسب</p>
+                    <a href="#" class="category-link">مشاهده محصولات</a>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>مبایل و الکترونیک</h3>
+                    <p>تلفن‌های همراه و لوازم الکترونیکی</p>
+                    <a href="#" class="category-link">مشاهده محصولات</a>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>وسایل خانه</h3>
+                    <p>مبلمان و لوازم خانگی</p>
+                    <a href="#" class="category-link">مشاهده محصولات</a>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>لباس و کفش</h3>
+                    <p>پوشاک و کفش‌های متنوع</p>
+                    <a href="#" class="category-link">مشاهده محصولات</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Subcategories -->
+        <div class="popular-subcategories">
+            <h2>زیر دسته‌بندی‌های محبوب</h2>
+            <div class="subcategories-container">
+                <div class="subcategories-grid">
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-car-side"></i>
+                        <span>موترهای سواری</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-truck"></i>
+                        <span>موترهای تجاری</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-mobile"></i>
+                        <span>تلفن‌های همراه</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-laptop"></i>
+                        <span>کمپیوتر</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-couch"></i>
+                        <span>مبلمان</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-tshirt"></i>
+                        <span>پوشاک</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-utensils"></i>
+                        <span>لوازم آشپزخانه</span>
+                    </a>
+                    <a href="#" class="subcategory-card">
+                        <i class="fas fa-tv"></i>
+                        <span>لوازم الکترونیکی</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/header.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html> 

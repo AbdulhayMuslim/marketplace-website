@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خورجین - فوتر</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inline style to ensure hover effect works */
+        .social-icon:hover { background-color: #FFD700 !important; }
+        .social-icon:hover i { color: #333 !important; }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-logo">
+                        <img src="../uploads/images/logo round web.png" alt="لوگوی خورجین">
+                        <h3>خورجین</h3>
+                        <p>بازار آنلاین خرید و فروش در افغانستان</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="فیسبوک"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="تلگرام"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-links-column">
+                            <h4>دسترسی سریع</h4>
+                            <ul>
+                                <li><a href="#">صفحه اصلی</a></li>
+                                <li><a href="#">محصولات</a></li>
+                                <li><a href="#">دسته‌بندی‌ها</a></li>
+                                <li><a href="#">جدیدترین‌ها</a></li>
+                                <li><a href="#">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-links-column">
+                            <h4>با خورجین</h4>
+                            <ul>
+                                <li><a href="#">درباره ما</a></li>
+                                <li><a href="#">همکاری با ما</a></li>
+                                <li><a href="#">شیوه‌های پرداخت</a></li>
+                                <li><a href="#">شرایط استفاده</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>عضویت در خبرنامه</h4>
+                        <p>برای اطلاع از آخرین محصولات و تخفیف‌ها در خبرنامه ما عضو شوید</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="ایمیل خود را وارد کنید..." required>
+                            <button type="submit">عضویت <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    تمامی حقوق این وب‌سایت متعلق به خورجین می‌باشد. &copy; 1404
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/footer.js">
+        // JavaScript for newsletter submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const emailInput = this.querySelector('input[type="email"]');
+                    const email = emailInput.value.trim();
+                    
+                    if (email) {
+                        // Here you would typically send the email to your server
+                        // For now, we'll just show an alert
+                        alert('با تشکر از ثبت‌نام شما در خبرنامه خورجین!');
+                        emailInput.value = '';
+                    }
+                });
+            }
+            
+            // Add event listeners for social icons
+            const socialIcons = document.querySelectorAll('.social-icon');
+            socialIcons.forEach(icon => {
+                icon.addEventListener('mouseenter', function() {
+                    const iconElement = this.querySelector('i');
+                    if (iconElement) {
+                        iconElement.style.color = '#333';
+                    }
+                    this.style.backgroundColor = '#FFD700';
+                });
+                
+                icon.addEventListener('mouseleave', function() {
+                    const iconElement = this.querySelector('i');
+                    if (iconElement) {
+                        iconElement.style.color = '';
+                    }
+                    this.style.backgroundColor = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات - خورجین</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #005695;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be loaded dynamically -->
+
+    <!-- Theme Toggle Bar -->
+    <div class="theme-toggle-container" id="theme-toggle">
+        <div class="theme-icons">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h1>محصولات</h1>
+            <div class="filters">
+                <select class="sort-select">
+                    <option value="newest">جدیدترین</option>
+                    <option value="price-asc">قیمت: کم به زیاد</option>
+                    <option value="price-desc">قیمت: زیاد به کم</option>
+                    <option value="popular">محبوب‌ترین</option>
+                </select>
+                <div class="view-toggle">
+                    <button class="grid-view active"><i class="fas fa-th"></i></button>
+                    <button class="list-view"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be dynamically added here -->
+        </div>
+
+        <div class="load-more-container" id="load-more-container">
+            <button class="load-more-btn" id="load-more-btn">
+                <span>مشاهده بیشتر</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Pagination will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-logo">
+                        <img src="uploads/images/logo round web.png" alt="لوگوی خورجین">
+                        <h3>خورجین</h3>
+                        <p>بازار آنلاین خرید و فروش در افغانستان</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="فیسبوک"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="تلگرام"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-links-column">
+                            <h4>دسترسی سریع</h4>
+                            <ul>
+                                <li><a href="../2. Home Page/index.html">صفحه اصلی</a></li>
+                                <li><a href="products.html">محصولات</a></li>
+                                <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                                <li><a href="listings.html">جدیدترین‌ها</a></li>
+                                <li><a href="contact.html">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-links-column">
+                            <h4>با خورجین</h4>
+                            <ul>
+                                <li><a href="about.html">درباره ما</a></li>
+                                <li><a href="careers.html">همکاری با ما</a></li>
+                                <li><a href="payment.html">شیوه‌های پرداخت</a></li>
+                                <li><a href="terms.html">شرایط استفاده</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>عضویت در خبرنامه</h4>
+                        <p>برای اطلاع از آخرین محصولات و تخفیف‌ها در خبرنامه ما عضو شوید</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="ایمیل خود را وارد کنید..." required>
+                            <button type="submit">عضویت <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    تمامی حقوق این وب‌سایت متعلق به خورجین می‌باشد. &copy; 1404
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
