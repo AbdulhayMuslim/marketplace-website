@@ -9,12 +9,12 @@ const currencyRates = {
 const recentListings = [
     {
         id: 1,
-        title: 'تلیفون آیفون ۱۳',
+        title: 'تلیفون آیفون 17',
         price: 150000,
         currency: 'AFN',
         image: 'https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg',
         location: 'کابل',
-        date: '۲ ساعت پیش'
+        date: '3 ساعت پیش'
     },
     {
         id: 2,
@@ -27,12 +27,12 @@ const recentListings = [
     },
     {
         id: 3,
-        title: 'موتر پراید',
+        title: 'تویوتا کرولا',
         price: 12000,
         currency: 'USD',
         image: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg',
         location: 'مزار شریف',
-        date: '۵ ساعت پیش'
+        date: '۵ روز پیش'
     },
     {
         id: 4,
