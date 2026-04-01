@@ -99,8 +99,8 @@ const recentListings = [
     },
     {
         id: 11,
-        title: 'آیفون ۱۲',
-        price: 85000,
+        title: 'آیفون 15',
+        price: 65000,
         currency: 'AFN',
         image: 'https://images.pexels.com/photos/5741605/pexels-photo-5741605.jpeg',
         location: 'کندهار',
@@ -112,7 +112,7 @@ const recentListings = [
         price: 25000,
         currency: 'AFN',
         image: 'https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg',
-        location: 'مزار شریف',
+        location: 'غور',
         date: '۴ ساعت پیش'
     },
     {
