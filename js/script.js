@@ -63,11 +63,11 @@ const recentListings = [
     },
     {
         id: 7,
-        title: 'تلویزیون سامسونگ',
-        price: 35000,
+        title: 'تلویزیون هوشمند',
+        price: 25000,
         currency: 'AFN',
         image: 'https://images.pexels.com/photos/6976094/pexels-photo-6976094.jpeg',
-        location: 'مزار شریف',
+        location: 'کندهار',
         date: '۲ ساعت پیش'
     },
     {
