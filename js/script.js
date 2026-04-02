@@ -135,11 +135,11 @@ const recentListings = [
     },
     {
         id: 15,
-        title: 'دوچرخه کوهستان',
+        title: 'بایسکل برقی',
         price: 45000,
         currency: 'AFN',
         image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg',
-        location: 'مزار شریف',
+        location: 'پروان',
         date: '۲ ساعت پیش'
     }
 ];
