@@ -155,13 +155,13 @@ body {
 /* Header and Navigation */
 .header {
     background-color: var(--header-bg);
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.5rem;
     box-shadow: 0 2px 5px var(--shadow-color);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     display: block;
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .logo img {
-    width: 30px;
+    width: 2rem;
     margin-top: 0.15rem;
 }
 
